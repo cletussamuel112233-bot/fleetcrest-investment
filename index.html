@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>FleetCrest Investments</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial,sans-serif;
+background:#000;
+color:white;
+}
+
+.page{
+display:none;
+padding:30px;
+}
+
+#dashboard{
+display:block;
+}
+
+.header{
+text-align:center;
+padding:30px;
+background:#111;
+}
+
+.logo{
+color:gold;
+font-size:32px;
+font-weight:bold;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+padding:20px;
+}
+
+.card{
+background:#111;
+border:1px solid gold;
+padding:25px;
+border-radius:10px;
+text-align:center;
+}
+
+.btn{
+display:block;
+width:100%;
+padding:15px;
+margin-top:10px;
+background:gold;
+color:black;
+text-decoration:none;
+font-weight:bold;
+border:none;
+cursor:pointer;
+border-radius:5px;
+}
+
+.back{
+background:#444;
+color:white;
+}
+
+input,
+select,
+textarea{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:none;
+border-radius:5px;
+}
+
+h2{
+color:gold;
+}
+
+</style>
+
+<script>
+
+function openPage(pageId){
+
+let pages=document.getElementsByClassName("page");
+
+for(let i=0;i<pages.length;i++){
+pages[i].style.display="none";
+}
+
+document.getElementById(pageId).style.display="block";
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<!-- DASHBOARD -->
+
+<div id="dashboard" class="page">
+
+<div class="header">
+
+<div class="logo">
+FleetCrest Investments
+</div>
+
+<p>Strategy. Growth. Wealth.</p>
+
+</div>
+
+<div class="grid">
+
+<div class="card">
+<h3>Investor Registration</h3>
+<p>Create your investment account.</p>
+<button class="btn" onclick="openPage('register')">
+Open Registration
+</button>
+</div>
+
+<div class="card">
+<h3>Company News</h3>
+<p>View latest updates.</p>
+<button class="btn" onclick="openPage('news')">
+Open Blog / News
+</button>
+</div>
+
+<div class="card">
+<h3>Testimonials</h3>
+<p>Read investor reviews.</p>
+<button class="btn" onclick="openPage('testimonials')">
+Open Testimonials
+</button>
+</div>
+
+<div class="card">
+<h3>FAQ</h3>
+<p>Frequently asked questions.</p>
+<button class="btn" onclick="openPage('faq')">
+Open FAQ
+</button>
+</div>
+
+<div class="card">
+<h3>Contact Us</h3>
+<p>Reach our support team.</p>
+<button class="btn" onclick="openPage('contact')">
+Open Contact
+</button>
+</div>
+
+</div>
+
+</div>
+
+<!-- REGISTRATION PAGE -->
+
+<div id="register" class="page">
+
+<h2>Investor Registration</h2>
+
+<form>
+
+<input type="text" placeholder="Full Name">
+
+<input type="email" placeholder="Email Address">
+
+<input type="tel" placeholder="Phone Number">
+
+<input type="text" placeholder="Residential Address">
+
+<select>
+
+<option>Select Investment Plan</option>
+
+<option>Starter Plan</option>
+
+<option>Growth Plan</option>
+
+<option>Premium Plan</option>
+
+<option>Wealth Plan</option>
+
+<option>Legacy Plan</option>
+
+</select>
+
+<textarea rows="5"
+placeholder="Additional Information">
+</textarea>
+
+<button class="btn">
+Submit Registration
+</button>
+
+</form>
+
+<br>
+
+<button class="btn back"
+onclick="openPage('dashboard')">
+
+Back To Dashboard
+
+</button>
+
+</div>
+
+<!-- BLOG PAGE -->
+
+<div id="news" class="page">
+
+<h2>FleetCrest News & Ads</h2>
+
+<div class="card">
+
+<h3>Gold Investment Update</h3>
+
+<p>
+Add your company advertisement here.
+</p>
+
+</div>
+
+<br>
+
+<div class="card">
+
+<h3>Market Update</h3>
+
+<p>
+Add investment news here.
+</p>
+
+</div>
+
+<br>
+
+<button class="btn back"
+onclick="openPage('dashboard')">
+
+Back To Dashboard
+
+</button>
+
+</div>
+
+<!-- TESTIMONIALS -->
+
+<div id="testimonials" class="page">
+
+<h2>Testimonials</h2>
+
+<div class="card">
+
+<p>
+"Excellent service and support."
+</p>
+
+<b>- Client One</b>
+
+</div>
+
+<br>
+
+<div class="card">
+
+<p>
+"Professional and responsive team."
+</p>
+
+<b>- Client Two</b>
+
+</div>
+
+<br>
+
+<button class="btn back"
+onclick="openPage('dashboard')">
+
+Back To Dashboard
+
+</button>
+
+</div>
+
+<!-- FAQ -->
+
+<div id="faq" class="page">
+
+<h2>Frequently Asked Questions</h2>
+
+<div class="card">
+
+<h3>How do I register?</h3>
+
+<p>
+Open the registration page and complete the form.
+</p>
+
+</div>
+
+<br>
+
+<div class="card">
+
+<h3>How can I contact support?</h3>
+
+<p>
+Visit the contact page.
+</p>
+
+</div>
+
+<br>
+
+<button class="btn back"
+onclick="openPage('dashboard')">
+
+Back To Dashboard
+
+</button>
+
+</div>
+
+<!-- CONTACT -->
+
+<div id="contact" class="page">
+
+<h2>Contact FleetCrest</h2>
+
+<p>
+Email:
+fleetcrestlogistics@gmail.com
+</p>
+
+<br>
+
+<p>
+Facebook:
+https://www.facebook.com/profile.php?id=61590677727911
+</p>
+
+<br>
+
+<button class="btn back"
+onclick="openPage('dashboard')">
+
+Back To Dashboard
+
+</button>
+
+</div>
+
+</body>
+</html>
