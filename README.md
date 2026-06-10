@@ -56,7 +56,7 @@ function submitForm() {
     alert("Registration submitted successfully!");
 }
 </script>
-</form>
+</form https://formspree.io/f/mrevlevy>
 https://formspree.io/f/mrevlevy
 
 </body>
