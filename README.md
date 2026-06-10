@@ -8,7 +8,15 @@
 
     <a href="Sign%20up.html">
         <button>Create Account</button>
-    </a>
+    <button type="button" onclick="submitForm()">
+    Submit Registration
+</button>
+
+<script>
+function submitForm() {
+    alert("Registration submitted successfully!");
+}
+</script>
 
 </body>
 </html>
