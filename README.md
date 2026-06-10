@@ -26,7 +26,7 @@
 </button>
 
 <script>
-function submitForm() {
+function submitForm(<form action="https://formspree.io/f/xxxxxxxx" method="POST">) {
     alert("Registration submitted successfully!");
 }
 </script>
