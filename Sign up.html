@@ -43,12 +43,17 @@ button{
 
 <h1>Create Account</h1>
 
-<form https://formspree.io/f/mrevlevy>
-  <input type="email" placeholder="Email Address">
-  <input type="password" placeholder="Password">
-  <input type="password" placeholder="Confirm Password">
-  <button type="submit">Submit Registration</button>
-</form https://formspree.io/f/mrevlevy>
+<form action="https://formspree.io/f/mrevlevy" method="POST">
+
+    <input type="email" name="email" placeholder="Email Address" required>
+
+    <input type="password" name="password" placeholder="Password" required>
+
+    <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+
+    <button type="submit">Submit Registration</button>
+
+</form>
 
 
 </body>
