@@ -171,15 +171,13 @@ Open Contact
 
 <h2>Investor Registration</h2>
 
-<form>
-
-<input type="text" placeholder="Full Name">
-
-<input type="email" placeholder="Email Address">
-
-<input type="tel" placeholder="Phone Number">
-
-<input type="text" placeholder="Residential Address">
+<form action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="bbde6afe-806d-4d88-8e12-cdf256f4596c">
+  <input type="text" name="name" required>
+  <input type="email" name="email" required>
+  <textarea name="message" required></textarea>
+  <button type="submit">Submit</button>
+</form>
 
 <select>
 
