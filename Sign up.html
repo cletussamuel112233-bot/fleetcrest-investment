@@ -43,16 +43,12 @@ button{
 
 <h1>Create Account</h1>
 
-<form action="https://formspree.io/f/mrevlevy" method="POST">
-
-    <input type="email" name="email" placeholder="Email Address" required>
-
-    <input type="password" name="password" placeholder="Password" required>
-
-    <input type="password" name="confirm_password" placeholder="Confirm Password" required>
-
-    <button type="submit">Submit Registration</button>
-
+<form action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="bbde6afe-806d-4d88-8e12-cdf256f4596c">
+  <input type="text" name="name" required>
+  <input type="email" name="email" required>
+  <textarea name="message" required></textarea>
+  <button type="submit">Submit</button>
 </form>
 
 
