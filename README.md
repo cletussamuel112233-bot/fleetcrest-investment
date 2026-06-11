@@ -43,9 +43,11 @@ button{
 
 <h1>Create Account</h1>
 
-<form action="https://formsubmit.co/fleetcrestlogestics@gmail.com" method="POST">
-  <input type="email" name="email" placeholder="Email Address" required>
-  <button type="submit">Send Test</button>
+<form>
+  <input type="email" placeholder="Email Address">
+  <input type="password" placeholder="Password">
+  <input type="password" placeholder="Confirm Password">
+  <button type="submit">Create Account</button>
 </form>
 onclick="submitForm()">
     Submit Registration
